@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --terracotta: #8e412e;
+  --autumn: #ba6f4d;
+  --aspengrove: #e6cebc;
+  --sagegreen: #a2a182;
+  --softforest: #687259;
+  --gray: #444;
+}
+body {
+  font-family: "Playfair Display", serif;
+  color: var(--gray);
+}
+img {
+  width: 100%;
+}
+header svg {
+  stroke: #916247;
+  width: 40px;
+  height: 40px;
+}
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ba6f4d;
+  }
+  h1 { 
+    color: var(--terracotta);
+    font-style: italic;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    line-height: 90%;
+  }
+  h2 {
+    font-family: "Oswald", sans-serif;
+    color: var(--softforest);
+  }
+  p {
+    color: var(--gray);
+    line-height: 150%;
+  }
+  li {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--softforest);
+    font-family: "Playfair Display", serif;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a:hover {
+    color: var(--sagegreen);
+  }
+  .form {
+    width: 50px;
+  }
+  main {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 70rem;
+  }
+  .button {
+    border: 3px solid #8e412e;
+    color: #8e412e;
+    font-size: 0.9375rem;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.3125rem;
+    font-weight: 700;
+    padding: 0.45rem .75rem 0.425rem;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 300ms ease 0s, color 300ms ease 0s,
+      border-color 300ms ease 0s, opacity 300ms ease 0s;
+  }
+  .button:hover, button:active, button:focus {
+    color: white;
+    background-color: black;
+    border-color: black;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+/*HAMBURGER MENU*/
+  
